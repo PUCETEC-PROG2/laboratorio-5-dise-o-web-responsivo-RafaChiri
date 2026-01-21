@@ -5,8 +5,9 @@
 }
 
 body{
+    color: rgb(0, 53, 99);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: blueviolet;
+    background-color: rgb(65, 173, 245);
 }
 
 .navbar{
@@ -40,15 +41,44 @@ body{
 }
 
 .nav-link {
-    color: blueviolet;
+    color: rgb(68, 149, 216);
     text-decoration: none;
     font-size: 15pt;
-    font-weight: bold;
     padding: 5px 5px;
     border-radius: 10px;
 }
 
 .nav-link:hover {
-    background-color: rgb(255, 255, 255);
-    font-weight: bold;
+    background-color: rgb(255, 255, 255);   
+}
+
+@media screen and ( max-width: 768px) {
+    .nav-container{
+        flex-direction: column;
+        align-items: start;
+        padding: 16px;
+    }
+
+    .nav-logo{
+    width: 100%;
+    height: auto;
+    }
+
+    .nav-menu{
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .nav-item{
+        margin-top: 12px;
+        width: 100%;
+    }
+
+    .nav-link{
+        padding: 12px;
+        width: 100%;
+    }
+
+    
 }
